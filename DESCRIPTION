@@ -1,9 +1,9 @@
 Package: prs
-Title: Population Representive Selection
+Title: prs: R package for selecting representive samples
 Version: 0.0.1
 Authors@R: 
     person("Mengzhuo", "Zheng", , "mengzhuo.zheng@pku-iaas.edu.cn", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: PRS is a population representive selector for picking the reference sample of pangenome projects,which is based on the distance of the different population.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
