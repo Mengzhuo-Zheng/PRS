@@ -1,5 +1,5 @@
 Package: prs
-Title: prs: R package for selecting representive samples
+Title: prs: R package for selecting representative samples
 Version: 0.0.1
 Authors@R: 
     person("Mengzhuo", "Zheng", , "mengzhuo.zheng@pku-iaas.edu.cn", role = c("aut", "cre"))
