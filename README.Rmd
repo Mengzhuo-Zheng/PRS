@@ -18,37 +18,38 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-**prs** is a 
+**PRS** is a population representive selector for picking the reference sample of pangenome projects,which is based on the distance of the different population.
 
 ## Installation
 
 You can install the development version of prs like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("Mengzhuo-Zheng/prs")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+- Calculate the score of the samples in different populations
 
 ```{r example}
-#library(prs)
-## basic example code
+library(prs)
+data("dist_matrix")
+data("sample_matrix")
+samples_score<-prscore(dist_matrix,sample_matrix)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+- Pick n samples for representive of populations from score_matrix
 
-```{r cars}
-summary(cars)
+```{r example2}
+library(prs)
+picked_samples<-prselect(samples_score,3)
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+- pick n samples for representive of populations from distance_matrix
+```{r example3}
+library(prs)
+library(dplyr)
+picked_samples<-prscore(dist_matrix,sample_matrix) %>%
+  prselect(3)
 ```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
