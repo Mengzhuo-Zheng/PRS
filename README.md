@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-**PRS** is a population representive selector for picking the reference sample of pangenome projects,which is based on the distance of the different population.
+**PRS** is a population representive selector for picking the reference sample of pangenome projects, which is based on the distance of the different population.
 
 ## Installation
 
@@ -25,14 +25,14 @@ data("sample_matrix")
 samples_score<-prscore(dist_matrix,sample_matrix)
 ```
 
-- Pick n samples for representive of populations from score_matrix
+- Pick **n** samples for representive of populations from score_matrix
 
 ```{r example2}
 library(prs)
 picked_samples<-prselect(samples_score,3)
 ```
 
-- pick n samples for representive of populations from distance_matrix
+- Pick **n** samples for representive of populations from distance_matrix
 ```{r example3}
 library(prs)
 library(dplyr)
