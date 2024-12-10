@@ -1,5 +1,5 @@
 
-# prs: R package for selecting representive samples
+# prs: R package for selecting representative samples
 
 <!-- badges: start -->
 <!-- badges: end -->
