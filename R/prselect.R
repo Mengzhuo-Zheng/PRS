@@ -1,3 +1,14 @@
+#' prselect: select n samples as representative samples by prescore
+#'
+#' @param score the output of prescore
+#' @param n number of selected samples
+#'
+#' @return selected n samples in populations
+#' @export
+#'
+#' @examples
+#' library(prs)
+#' preselect_matrix<-preselect(score,n)
 prselect<-function(score,n) {
   prselect_matrix<-as.data.frame(matrix("",length(unique(score$cluster)),n+1))
   colnames(prselect_matrix)<-c("cluster",paste0("ref",seq(n)))
