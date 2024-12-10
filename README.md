@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-**PRS** is a population representive selector for picking the reference sample of pangenome projects, which is based on the distance of the different population.
+**PRS** is a population representive selector for picking the reference sample of pangenome projects, which is based on the distance of the different populations.
 
 ## Installation
 
