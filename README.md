@@ -1,19 +1,5 @@
----
-output: github_document
----
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-
-# prs
+# prs: R package for selecting representive samples
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -52,4 +38,9 @@ library(prs)
 library(dplyr)
 picked_samples<-prscore(dist_matrix,sample_matrix) %>%
   prselect(3)
+```
+
+## Cite
+```
+Liao, WW., Asri, M., Ebler, J. et al. A draft human pangenome reference. Nature 617, 312–324 (2023). https://doi.org/10.1038/s41586-023-05896-x
 ```
