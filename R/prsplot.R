@@ -13,7 +13,7 @@
 #'
 #' @importFrom ape pcoa
 #' @importFrom ggplot2 ggplot aes geom_point geom_hline geom_vline labs geom_label theme_bw
-#' @importForm tidyr gather
+#' @importFrom tidyr gather
 #'
 #' @examples
 #' prsplot(dist_matrix,sample_matrix,picked_samples)
