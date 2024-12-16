@@ -2,7 +2,7 @@
 % Please edit documentation in R/prsplot.R
 \name{prsplot}
 \alias{prsplot}
-\title{Title}
+\title{prsplot: plot the result of pcoa and/or prselect}
 \usage{
 prsplot(
   dist_matrix,
@@ -33,7 +33,7 @@ prsplot(
 0
 }
 \description{
-Title
+prsplot: plot the result of pcoa and/or prselect
 }
 \examples{
 prsplot(dist_matrix,sample_matrix,picked_samples)

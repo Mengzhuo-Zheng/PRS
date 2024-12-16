@@ -40,6 +40,17 @@ picked_samples<-prscore(dist_matrix,sample_matrix) %>%
   prselect(3)
 ```
 
+- Visualize the result of representative result of pcoa and/or prselect
+```{r example4}
+library(prs)
+library(dplyr)
+library(patchwork)
+p1<-prsplot(dist_matrix,sample_matrix,picked_samples)
+p2<-prsplot(dist_matrix,sample_matrix,picked_samples,type = "representative",label = FALSE)
+p3<-prsplot(dist_matrix,sample_matrix,picked_samples,type = "representative",label = TRUE)
+```
+![picture](./plot/prsplot_result.png "prsplot")
+
 ## Cite
 ```
 Liao, WW., Asri, M., Ebler, J. et al. A draft human pangenome reference. Nature 617, 312–324 (2023). https://doi.org/10.1038/s41586-023-05896-x

@@ -1,4 +1,4 @@
-#' Title
+#' prsplot: plot the result of pcoa and/or prselect
 #'
 #' @param dist_matrix the distance matrix produced by VCF2Dis
 #' @param sample_matrix sample matrix with sample column and cluster column
