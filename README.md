@@ -48,6 +48,7 @@ library(patchwork)
 p1<-prsplot(dist_matrix,sample_matrix,picked_samples)
 p2<-prsplot(dist_matrix,sample_matrix,picked_samples,type = "representative",label = FALSE)
 p3<-prsplot(dist_matrix,sample_matrix,picked_samples,type = "representative",label = TRUE)
+p1+p2+p3
 ```
 ![picture](./plot/prsplot_result.png "prsplot")
 
